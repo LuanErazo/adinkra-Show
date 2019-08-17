@@ -1,0 +1,387 @@
+$Bcolor: #EEEAE1;
+$YellowPure: #FFC701;
+$Thin: 300;
+$regular: 400;
+$bold: 600;
+$blackF: 700;
+$fontFamily: 'Josefin Sans',
+sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+body {
+    background: $Bcolor;
+}
+
+h1 {
+    align-items: center;
+    font-size: 5vw;
+    font-weight: $blackF;
+    letter-spacing: 0.035em;
+    color: black;
+}
+
+h2 {
+    margin: 30px 0;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexRowR {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.donateButtonWeb {
+    width: 7em;
+    height: 2em;
+    background: $YellowPure;
+    border: 3px solid $YellowPure;
+    font-size: 1.2em;
+    font-weight: $Thin;
+    border-radius: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 0.035em;
+}
+
+nav {
+    z-index: 1000;
+    position: fixed;
+    background: $Bcolor;
+    width: 100%;
+    height: 76px;
+    align-items: center;
+    justify-content: space-around;
+    .logo {
+        $LogoSize: 4em;
+        border-radius: 100%;
+        background: gray;
+        height: $LogoSize;
+        width: $LogoSize;
+        margin: 0 2em;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        li {
+            padding: 0 1.5em;
+            text-align: center;
+            font-size: 1.2em;
+            letter-spacing: 0.035em;
+            a {
+                text-decoration: none;
+                color: black;
+                font-weight: 400;
+            }
+            button {
+                background: $Bcolor;
+                border: 3px solid $YellowPure;
+                font-size: 1.2em;
+                border-radius: 25px;
+                box-sizing: border-box;
+                text-align: center;
+                width: 6em;
+                height: 1.5em;
+            }
+        }
+    }
+}
+
+#video {
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    h1 {
+        padding: 20% 0 0 10%;
+    }
+}
+
+#textoG {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        width: 80%;
+        text-align: justify;
+        color: $Bcolor;
+        font-size: 2.5vw;
+        line-height: 145%;
+    }
+    /* yeelow orange gradient */
+    background: linear-gradient(132.48deg, #FFC701 2.1%, #F35A18 76.72%);
+}
+
+.yellowLine {
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px $YellowPure solid;
+}
+
+.yellowLineRight {
+    width: 100%;
+    height: 2px;
+    border-right: 2px $YellowPure solid;
+}
+
+.yellowLineLeft {
+    width: 100%;
+    height: 2px;
+    border-left: 2px $YellowPure solid;
+}
+
+.tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 25%;
+}
+
+#adinkras {
+    width: 100%;
+    h1 {
+        // width: 35%;
+        text-align: center;
+        padding: 50px 0 30px 0;
+        /* Shadow */
+        text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    p {
+        width: 50%;
+        margin: 40px 0;
+        text-align: center;
+        font-weight: $regular;
+        font-size: 1.3em;
+    }
+    .formasAdinkras {
+        $sphere: 200px;
+        justify-content: center;
+        margin: 60px 0 0 0;
+        padding-bottom: 40px;
+        border-bottom: 4px $YellowPure solid;
+        .selector {
+            margin: 0 40px 0 0;
+            width: $sphere;
+            height: $sphere;
+            .bola {
+                width: $sphere;
+                height: $sphere;
+                border-radius: 100%;
+                background: gray;
+            }
+        }
+    }
+    .descripcion {
+        margin: 50px 0 100px 0;
+        p {
+            margin: 20px 25%;
+            text-align: center;
+            font-weight: $Thin;
+        }
+    }
+}
+
+#miniseccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    .textWrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        .text {
+            padding: 15px;
+            width: 24%;
+            line-height: 163%;
+        }
+    }
+    button {
+        margin: 100px 45%;
+    }
+}
+
+#proxEventos {
+    $sixeEventos: 80vh;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+    .evento {
+        width: 50%;
+        height: $sixeEventos;
+        background: #251E2D;
+        h1,
+        h2,
+        h3,
+        p {
+            color: $Bcolor;
+            letter-spacing: 0.035em;
+        }
+        h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+        h3 {
+            font-size: 2.5em;
+            font-weight: $regular;
+        }
+        h1 {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 3.5em;
+        }
+        .eventoIndividual {
+            width: 60%;
+            margin: 0 20%;
+            .descrip {
+                width: 100%;
+                margin: 0 0 0 40px;
+            }
+            .nombreEvento {
+                font-weight: $bold;
+                font-size: 1.3em;
+                line-height: 21px;
+            }
+            .descripcionEvento {
+                margin: 5px 0;
+                color: #7B7A77;
+                font-weight: $Thin;
+                font-size: 1.2em;
+            }
+            .lugarHora {
+                float: right;
+                font-size: 1em;
+                font-weight: $bold;
+            }
+            .yellowLine {
+                border-width: 1px;
+                margin: 20px 0;
+            }
+        }
+    }
+    .img {
+        position: relative;
+        width: 50%;
+        height: $sixeEventos;
+        background: gray;
+        .rectangulo {
+            background: white;
+            position: absolute;
+            top: 60vh;
+            height: 50%;
+            width: 60%;
+            margin: 0 20%;
+            /* Shadow */
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            h1 {
+                text-align: center;
+                margin: auto;
+                font-size: 3em;
+                letter-spacing: 0.035em;
+                text-transform: uppercase;
+                line-height: 123%;
+            }
+        }
+    }
+}
+
+.eventosPasados {
+    $WidthPastEvents: 40%;
+    $heightPastEvents: 40vh;
+    margin: 40vh 0 0 0;
+    .yellowLineLeft,
+    .yellowLineRight {
+        border-width: 4px;
+    }
+    h1 {
+        margin: 100px 10%;
+        font-size: 3.5em;
+        width: auto;
+        // text-align: initial;
+    }
+    .content {
+        margin: 100px 0 0 10%;
+        width: $WidthPastEvents;
+        // height: $heightPastEvents;
+    }
+    .contentR {
+        margin: 100px 5% 0 5%;
+        width: $WidthPastEvents;
+    }
+    .titleWrap {
+        width: 60%;
+        h2 {
+            text-align: left;
+            margin: 5px 0;
+        }
+    }
+    .contentP {
+        margin: 30px 0 50px 0;
+        width: 90%;
+    }
+    .img {
+        width: 50%;
+        height: $heightPastEvents;
+        background: gray;
+    }
+}
+
+.tresOpciones {
+    margin: 200px 0;
+}
+
+.opcionIndividual {
+    width: 24%;
+    margin: 0 auto;
+    .img {
+        margin: 0 auto;
+        $sizeOPciones: 130px;
+        width: $sizeOPciones;
+        height: $sizeOPciones;
+        border-radius: 100%;
+        background: gray;
+    }
+    .tittle {
+        h2 {
+            margin: 10px 0;
+        }
+        width: auto;
+        margin: 0;
+    }
+    p {
+        width: 90%;
+        margin: 30px auto;
+        text-align: center;
+        line-height: 125%;
+        font-size: 1.5em;
+    }
+}
+
+footer {
+    height: 100px;
+    background: #251E2D;
+}
